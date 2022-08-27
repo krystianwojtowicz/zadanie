@@ -31,6 +31,14 @@ section {
     .play{
         color: white;
         grid-column: span 2;
+        position: relative;
+        .popup {
+            position: absolute;
+            visibility: hidden;
+        }
+        .popup.show {
+            visibility: visible;
+        }
         i {
             transform: scaleX(2);
         }

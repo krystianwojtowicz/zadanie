@@ -38,6 +38,16 @@ section nav ul .navbar-logo {
 section .play {
   color: white;
   grid-column: span 2;
+  position: relative;
+}
+
+section .play .popup {
+  position: absolute;
+  visibility: hidden;
+}
+
+section .play .popup.show {
+  visibility: visible;
 }
 
 section .play i {

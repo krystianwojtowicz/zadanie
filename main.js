@@ -1,9 +1,20 @@
+// popup
+
+function myFunction() {
+  const popup = document.querySelector(".popup");
+  popup.classList.toggle("show");
+}
+
+// navbar
+
 const toggleButton = document.querySelector(".navbar-toggle");
 const navbarLinks = document.querySelectorAll(".navbar-links");
 toggleButton.addEventListener("click", function () {
   for (let i = 0; i < navbarLinks.length; i++)
     navbarLinks[i].classList.toggle("active");
 });
+
+// form
 
 const form = document.getElementById("form");
 const username = document.getElementById("username");
