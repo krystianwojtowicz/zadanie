@@ -10,6 +10,7 @@ section {
   background: url("./iphone.jpg") center/cover no-repeat;
   max-width: 1495px;
   margin: auto;
+  font-family: 'Manrope', sans-serif;
 }
 
 section nav {
@@ -31,6 +32,14 @@ section nav ul li {
   list-style-type: none;
 }
 
+section nav ul li:nth-child(3) {
+  position: relative;
+}
+
+section nav ul li:nth-child(3) .find {
+  position: absolute;
+}
+
 section nav ul .navbar-logo {
   flex: 1;
 }
@@ -38,16 +47,6 @@ section nav ul .navbar-logo {
 section .play {
   color: white;
   grid-column: span 3;
-  position: relative;
-}
-
-section .play .popup {
-  position: absolute;
-  display: none;
-}
-
-section .play .popup.show {
-  display: block;
 }
 
 section .play i {
@@ -60,6 +59,7 @@ section .icons {
 
 section .text {
   grid-column: span 2;
+  position: relative;
 }
 
 section .text .dot {
@@ -71,7 +71,17 @@ section .text .dot {
   position: relative;
 }
 
-section .text .oval {
+section .text .dot .popup {
+  position: absolute;
+  top: 50px;
+  display: none;
+}
+
+section .text .dot .popup.show {
+  display: block;
+}
+
+section .text .dot .oval {
   position: absolute;
   top: 10px;
   left: 41px;
@@ -82,7 +92,7 @@ section .text .oval {
   border-radius: 0px 20px 20px 0px;
 }
 
-section .text .oval p {
+section .text .dot .oval p {
   font-size: 10px;
   width: 99px;
   height: 15px;
@@ -96,6 +106,7 @@ section .arrow {
 
 section .form {
   grid-column: span 2;
+  font-family: 'Inter', sans-serif;
 }
 
 @media all and (max-width: 600px) {

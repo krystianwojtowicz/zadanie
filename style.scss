@@ -2,105 +2,229 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-section {
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
+  }
+  
+  section {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
     background: url("./iphone.jpg") center/cover no-repeat;
     max-width: 1495px;
     margin: auto;
+    font-family: 'Manrope', sans-serif;
     nav {
-        grid-column: 1 / -1;
-        ul{
-            display: flex;
-            width: 100%;
-            align-items: center;
-            color: white;
-            .navbar-toggle {
-                display: none;
-            }
-            li {
-                list-style-type: none;
-            }
-            .navbar-logo {
-                flex: 1;
-            }
-        }
-    }
-    .play{
+      grid-column: 1 / -1;
+      ul {
+        display: flex;
+        width: 100%;
+        align-items: center;
         color: white;
-        grid-column: span 3;
-        position: relative;
-        .popup {
+        .navbar-toggle {
+          display: none;
+        }
+        li {
+          list-style-type: none;
+        }
+        li:nth-child(3) {
+          position: relative;
+          .find {
             position: absolute;
-            display: none;
+          }
         }
-        .popup.show {
-            display: block;
+  
+        .navbar-logo {
+          flex: 1;
         }
-        i {
-            transform: scaleX(2);
-        }
+      }
+    }
+    .play {
+      color: white;
+      grid-column: span 3;
+      i {
+        transform: scaleX(2);
+      }
     }
     .icons {
-        grid-column: span 3;
+      grid-column: span 3;
     }
     .text {
-        grid-column: span 2; 
-        .dot {
-            height: 55px;
-            width: 58px;
-            background-color: rgba(253, 196, 99, 1);
-            border-radius: 50%;
-            display: inline-block;
-            position: relative;
-          }
-          .oval {
-            position: absolute;
-            top: 10px;
-            left: 41px;
-    width: 131px;
-    height: 36px;
-    background: rgba(255, 255, 255, 1);
-    display: inline-block;
-    border-radius: 0px 20px 20px 0px;
-    p {
-        font-size: 10px;
-        width: 99px;
-        height: 15px;
-        line-height: 14px;
-        margin: 10px 19px 10px 13px;
-    }
+      grid-column: span 2;
+      position: relative;
+      .dot {
+        height: 55px;
+        width: 58px;
+        background-color: rgba(253, 196, 99, 1);
+        border-radius: 50%;
+        display: inline-block;
+        position: relative;
+        .popup {
+          position: absolute;
+          top:50px;
+          display: none;
         }
+        .popup.show {
+          display: block;
+        }
+         .oval {
+       
+        position: absolute;
+        top: 10px;
+        left: 41px;
+        width: 131px;
+        height: 36px;
+        background: rgba(255, 255, 255, 1);
+        display: inline-block;
+        border-radius: 0px 20px 20px 0px;
+       
+        p {
+          font-size: 10px;
+          width: 99px;
+          height: 15px;
+          line-height: 14px;
+          margin: 10px 19px 10px 13px;
+        }
+      }
+      }
+     
     }
     .arrow {
-        grid-column: span 2;
+      grid-column: span 2;
     }
     .form {
-        grid-column: span 2;
+      grid-column: span 2;
+      font-family: 'Inter', sans-serif;
     }
+  }
+  
+  @media all and (max-width: 600px) {
+    section {
+      .navbar ul {
+        flex-wrap: wrap;
+        .navbar-toggle {
+          display: block;
+        }
+        .navbar-links {
+          display: none;
+          width: 100%;
+          text-align: center;
+        }
+        .active {
+          display: block;
+        }
+      }
+    }
+  }
+
+  // * {
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box;
+// }
+
+// section {
+//       display: grid;
+//       grid-template-columns: repeat(6, 1fr);
+//     background: url("./iphone.jpg") center/cover no-repeat;
+//     max-width: 1495px;
+//     margin: auto;
+//     nav {
+//         grid-column: 1 / -1;
+//         ul{
+//             display: flex;
+//             width: 100%;
+//             align-items: center;
+//             color: white;
+//             .navbar-toggle {
+//                 display: none;
+//             }
+//             li {
+//                 list-style-type: none;
+//             }
+//             li:nth-child(3) {
+// position: relative;
+// .find {
+//     position: absolute;
+// }
+//             }
+            
+//             .navbar-logo {
+//                 flex: 1;
+//             }
+//         }
+//     }
+//     .play{
+//         color: white;
+//         grid-column: span 3;
+//         position: relative;
+//         .popup {
+//             position: absolute;
+//             display: none;
+//         }
+//         .popup.show {
+//             display: block;
+//         }
+//         i {
+//             transform: scaleX(2);
+//         }
+//     }
+//     .icons {
+//         grid-column: span 3;
+//     }
+//     .text {
+//         grid-column: span 2; 
+//         .dot {
+//             height: 55px;
+//             width: 58px;
+//             background-color: rgba(253, 196, 99, 1);
+//             border-radius: 50%;
+//             display: inline-block;
+//             position: relative;
+//           }
+//           .oval {
+//             position: absolute;
+//             top: 10px;
+//             left: 41px;
+//     width: 131px;
+//     height: 36px;
+//     background: rgba(255, 255, 255, 1);
+//     display: inline-block;
+//     border-radius: 0px 20px 20px 0px;
+//     p {
+//         font-size: 10px;
+//         width: 99px;
+//         height: 15px;
+//         line-height: 14px;
+//         margin: 10px 19px 10px 13px;
+//     }
+//         }
+//     }
+//     .arrow {
+//         grid-column: span 2;
+//     }
+//     .form {
+//         grid-column: span 2;
+//     }
   
 
-}
+// }
 
 
-@media all and (max-width: 600px) {
-    section {
-        .navbar ul {
-            flex-wrap: wrap;
-            .navbar-toggle {
-                display: block;
-            }
-            .navbar-links {
-                display: none;
-                width: 100%;
-                text-align: center;
-            }
-            .active {
-                display: block;
-            }
-        }
-    }
+// @media all and (max-width: 600px) {
+//     section {
+//         .navbar ul {
+//             flex-wrap: wrap;
+//             .navbar-toggle {
+//                 display: block;
+//             }
+//             .navbar-links {
+//                 display: none;
+//                 width: 100%;
+//                 text-align: center;
+//             }
+//             .active {
+//                 display: block;
+//             }
+//         }
+//     }
    
-  }
+//   }
+  

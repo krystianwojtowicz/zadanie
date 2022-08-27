@@ -5,6 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    /> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Manrope&family=Rubik:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Manrope&family=Rubik:wght@400;500&display=swap"
+      rel="stylesheet"
+    /> -->
     <link rel="stylesheet" href="style.css" />
     <!-- <script src="https://kit.fontawesome.com/4e938b38b8.js"></script> -->
     <!-- <link
@@ -18,25 +31,18 @@
         <ul>
           <li class="navbar-logo">Gloritel</li>
           <li class="navbar-toggle"><i class="fas fa-bars"></i></li>
-          <li class="navbar-links">Find Hotels</li>
+          <li class="navbar-links">
+            <i class="fa-solid fa-angle-down find"></i>
+            Find Hotels
+          </li>
           <li class="navbar-links">Location</li>
           <li class="navbar-links">About</li>
           <li class="navbar-links">Contact</li>
           <li class="navbar-links">Login</li>
         </ul>
       </nav>
-      <div class="play" onclick="myFunction()">
+      <div class="play">
         <!-- <embed src="https://www.youtube.com/watch?v=idYUy3hf3D0" type="" /> -->
-        <iframe
-          class="popup"
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/zsCD5XCu6CM"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
 
         <i class="fa-solid fa-circle-play"></i>
       </div>
@@ -52,8 +58,20 @@
       </div>
       <div class="text">
         <h1>Find Most Luxurious Hotels Across the Globe</h1>
-        <div class="dot">
-          <div class="oval"><p>Watch Demo Video</p></div>
+        <div class="dot" onclick="myFunction()">
+          <iframe
+            class="popup"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/zsCD5XCu6CM"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <div class="oval">
+            <p>Watch Demo Video</p>
+          </div>
         </div>
       </div>
       <div class="arrow">
