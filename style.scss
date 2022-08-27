@@ -31,6 +31,9 @@ section {
     .play{
         color: white;
         grid-column: span 2;
+        i {
+            transform: scaleX(2);
+        }
     }
     .icons {
         grid-column: span 2;
