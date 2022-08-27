@@ -6,7 +6,7 @@
 
 section {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: repeat(6, 1fr);
     background: url("./iphone.jpg") center/cover no-repeat;
     max-width: 1495px;
     margin: auto;
@@ -30,7 +30,7 @@ section {
     }
     .play{
         color: white;
-        grid-column: span 2;
+        grid-column: span 3;
         position: relative;
         .popup {
             position: absolute;
@@ -44,7 +44,7 @@ section {
         }
     }
     .icons {
-        grid-column: span 2;
+        grid-column: span 3;
     }
     .text {
         grid-column: span 2; 
@@ -70,9 +70,12 @@ section {
         width: 99px;
         height: 15px;
         line-height: 14px;
-        margin: 19px 10px 13px 10px;
+        margin: 10px 19px 10px 13px;
     }
         }
+    }
+    .arrow {
+        grid-column: span 2;
     }
     .form {
         grid-column: span 2;
