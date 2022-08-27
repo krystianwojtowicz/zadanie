@@ -43,11 +43,11 @@ section .play {
 
 section .play .popup {
   position: absolute;
-  visibility: hidden;
+  display: none;
 }
 
 section .play .popup.show {
-  visibility: visible;
+  display: block;
 }
 
 section .play i {

@@ -34,10 +34,10 @@ section {
         position: relative;
         .popup {
             position: absolute;
-            visibility: hidden;
+            display: none;
         }
         .popup.show {
-            visibility: visible;
+            display: block;
         }
         i {
             transform: scaleX(2);
