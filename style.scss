@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    background: url("./iphone.jpg") center/cover no-repeat;
+    max-width: 1495px;
+    margin: auto;
+    nav {
+        grid-column: 1 / -1;
+        ul{
+            display: flex;
+            width: 100%;
+            align-items: center;
+            color: white;
+            .navbar-toggle {
+                display: none;
+            }
+            li {
+                list-style-type: none;
+            }
+            .navbar-logo {
+                flex: 1;
+            }
+        }
+    }
+    .play{
+        color: white;
+        grid-column: span 2;
+    }
+    .icons {
+        grid-column: span 2;
+    }
+    .text {
+        grid-column: span 2; 
+    }
+    .form {
+        grid-column: span 2;
+    }
+  
+
+}
+
+
+@media all and (max-width: 600px) {
+    section {
+        .navbar ul {
+            flex-wrap: wrap;
+            .navbar-toggle {
+                display: block;
+            }
+            .navbar-links {
+                display: none;
+                width: 100%;
+                text-align: center;
+            }
+            .active {
+                display: block;
+            }
+        }
+    }
+   
+  }
