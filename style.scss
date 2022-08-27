@@ -48,6 +48,31 @@ section {
     }
     .text {
         grid-column: span 2; 
+        .dot {
+            height: 55px;
+            width: 58px;
+            background-color: rgba(253, 196, 99, 1);
+            border-radius: 50%;
+            display: inline-block;
+            position: relative;
+          }
+          .oval {
+            position: absolute;
+            top: 10px;
+            left: 41px;
+    width: 131px;
+    height: 36px;
+    background: rgba(255, 255, 255, 1);
+    display: inline-block;
+    border-radius: 0px 20px 20px 0px;
+    p {
+        font-size: 10px;
+        width: 99px;
+        height: 15px;
+        line-height: 14px;
+        margin: 19px 10px 13px 10px;
+    }
+        }
     }
     .form {
         grid-column: span 2;
