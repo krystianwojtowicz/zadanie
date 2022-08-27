@@ -1,4 +1,5 @@
-xhttp.open("GET", "https://www.youtube.com/embed/zsCD5XCu6CM", true);
+// const xhttp = new XMLHttpRequest();
+// xhttp.open("GET", "https://www.youtube.com/embed/zsCD5XCu6CM", true);
 // popup
 
 function myFunction() {
