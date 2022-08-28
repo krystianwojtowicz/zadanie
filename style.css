@@ -6,7 +6,7 @@
 
 section {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(249px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(299px, 1fr));
   background: url("./images/iphone.jpg") center/cover no-repeat;
   max-width: 1495px;
   margin: auto;
@@ -92,20 +92,6 @@ section nav ul .navbar-logo {
   margin-left: 6.66%;
 }
 
-section .play {
-  color: white;
-  grid-column: span 3;
-}
-
-section .play i {
-  transform: scaleX(2);
-}
-
-section .icons {
-  flex-shrink: 0;
-  grid-column: span 3;
-}
-
 section .text {
   grid-column: span 2;
   position: relative;
@@ -147,10 +133,6 @@ section .text .dot .oval p {
   height: 15px;
   line-height: 14px;
   margin: 10px 19px 10px 13px;
-}
-
-section .arrow {
-  grid-column: span 2;
 }
 
 section .form {

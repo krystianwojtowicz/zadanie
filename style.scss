@@ -7,7 +7,7 @@
   section {
     display: grid;
     // grid-template-columns: repeat(6, 1fr);
-    grid-template-columns: repeat(auto-fit, minmax(249px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(299px, 1fr));
     background: url("./images/iphone.jpg") center/cover no-repeat;
     max-width: 1495px;
     margin: auto;
@@ -86,18 +86,6 @@ a {
         }
       }
     }
-    .play {
-      color: white;
-      grid-column: span 3;
-      // flex-shrink: 1;
-      i {
-        transform: scaleX(2);
-      }
-    }
-    .icons {
-      flex-shrink: 0;
-      grid-column: span 3;
-    }
     .text {
       grid-column: span 2;
       position: relative;
@@ -139,7 +127,7 @@ a {
      
     }
     .arrow {
-      grid-column: span 2;
+      // grid-column: span 2;
     }
     .form {
       grid-column: span 2;
@@ -158,9 +146,6 @@ margin: auto;
         }
         li:nth-child(3) {
           margin: 0;
-          img {
-            // left: 60%;
-          }
         }
         li:nth-child(4) {
           margin: 0;
