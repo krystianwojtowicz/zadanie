@@ -6,16 +6,19 @@
   
   section {
     display: grid;
-    // grid-template-columns: repeat(6, 1fr);
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(7, 1fr);
+    // grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-areas: "nav nav nav nav nav nav nav" "text text text arrow form form form";
     background: url("./images/iphone.jpg") center/cover no-repeat;
+    // background-color: rgb(20, 97, 71);
     max-width: 1495px;
     margin: auto;
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
     nav {
-      grid-column: 1 / -1;
+      // grid-column: 1 / -1;
       padding-top: 27px;
+      grid-area: nav;
       ul {
         // min-height: 81px;
         align-items: center;
@@ -87,10 +90,11 @@ a {
       }
     }
     .text {
-      grid-column: span 2;
+      // grid-column: span 2;
+      grid-area: text;
       position: relative;
       padding-top: 106px;
-      padding-left: 100px;
+      padding-left: 17%;
       i.circle{
         color: rgba(255, 255, 255, 1);
         transform: scale(3.625, 1.0625);
@@ -100,8 +104,8 @@ a {
       h1 {
         position: relative;
         margin-top: 109px;
-        width: 619.67px;
-height: 253.33px;
+        max-width: 620px;
+min-height: 253.33px;
 font-style: normal;
 font-weight: 600;
 font-size: 66.607px;
@@ -159,8 +163,10 @@ i.location {
      
     }
     .arrow {
+      grid-area: arrow;
       color: rgba(0, 0, 0, 1);
       padding-top: 434px;
+      text-align: center;
       // display: flex;
       // justify-content: center;
 
@@ -171,30 +177,60 @@ i.location {
       }
     }
     .form {
-      grid-column: span 2;
+      // grid-column: span 2;
+      grid-area: form;
       font-family: 'Inter', sans-serif;
       .wrapper {
         display: flex;
-        height: 142px;
+        height: 140px;
         .vector {
           width: 50%;
-          margin-top: 103px;
+          margin-top: 97px;
+          img {
+            position: relative;
+            bottom: 10px;
+          }
         }
         .icons {
           width: 50%;
-          position: relative;
+          text-align: center;
+          padding-right: 5%;
           i.location, img {
             display: block;
+            margin: auto;
+          }
+          img {
+            margin-top: 45px;
           }
           i.location {
             transform: scale(1.083, 0.375);
+            margin-top: 34px;
+            // display: inline;
+            // margin-right: 195px;
                 }
-                i.arrow-down {
-                  transform: scale(1.5, 0.25);
-                  position: absolute;
-                      }
+                
         }
        
+            }
+            form {
+              position: relative;
+              color: rgba(255, 255, 255, 1);
+              font-weight: 500;
+              height: 674.5px;
+              max-width: 537.88px;
+              margin-bottom: 75px;
+              background: rgba(217, 217, 217, 0.1);
+              box-shadow: inset 39.1333px -39.1333px 39.1333px rgba(165, 165, 165, 0.1), inset -39.1333px 39.1333px 39.1333px rgba(255, 255, 255, 0.1);
+backdrop-filter: blur(78.2667px);
+border-radius: 10px;
+margin-right: 16.84%;
+padding: 43.28px 0 33.78px 0;
+i.arrow-down {
+  transform: scale(1.5, 0.25);
+  position: absolute;
+  top: -6px;
+  right: 11%;
+      }
             }
       }
       
