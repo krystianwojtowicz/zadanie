@@ -38,6 +38,11 @@ section nav ul li {
   line-height: 33px;
 }
 
+section nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
 section nav ul li:nth-child(6) {
   margin-left: 1.47%;
 }
@@ -50,11 +55,11 @@ section nav ul li:nth-child(4) {
   margin: 0 1.47% 0 3.6%;
 }
 
-section nav ul li:nth-child(3) {
+section nav ul li:nth-child(3) a {
   position: relative;
 }
 
-section nav ul li:nth-child(3) img {
+section nav ul li:nth-child(3) a img {
   position: absolute;
   top: 8.56px;
   left: 125.67px;
@@ -160,9 +165,6 @@ section .form {
   }
   section .navbar ul li:nth-child(3) {
     margin: 0;
-  }
-  section .navbar ul li:nth-child(3) img {
-    left: 60%;
   }
   section .navbar ul li:nth-child(4) {
     margin: 0;

@@ -22,7 +22,7 @@
         display: flex;
         width: 100%;
         align-items: center;
-        color: white;
+        color: rgba(255, 255, 255, 1);
         .navbar-toggle {
           display: none;
           margin-right: 10px;
@@ -31,6 +31,10 @@
           list-style-type: none;
           font-size: 24px;
           line-height: 33px;
+          a {
+            color: rgba(255, 255, 255, 1);
+            text-decoration: none;
+          }
         }
         li:nth-child(6) {
           margin-left: 1.47%;
@@ -42,12 +46,15 @@
           margin: 0 1.47% 0 3.6%;
         }
         li:nth-child(3) {
-          position: relative;
-          img {
-            position: absolute;
-            top: 8.56px;
-            left: 125.67px;
+          a {
+            position: relative;
+            img {
+              position: absolute;
+              top: 8.56px;
+              left: 125.67px;
+            }
           }
+         
         }
         li:last-child {
     font-weight: 500;
@@ -149,7 +156,7 @@ margin: auto;
         li:nth-child(3) {
           margin: 0;
           img {
-            left: 60%;
+            // left: 60%;
           }
         }
         li:nth-child(4) {
