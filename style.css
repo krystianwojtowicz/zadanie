@@ -7,10 +7,11 @@
 section {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  background: url("./iphone.jpg") center/cover no-repeat;
+  background: url("./images/iphone.jpg") center/cover no-repeat;
   max-width: 1495px;
   margin: auto;
   font-family: 'Manrope', sans-serif;
+  font-weight: 500;
 }
 
 section nav {
@@ -36,7 +37,7 @@ section nav ul li:nth-child(3) {
   position: relative;
 }
 
-section nav ul li:nth-child(3) .find {
+section nav ul li:nth-child(3) img {
   position: absolute;
 }
 
@@ -54,6 +55,7 @@ section .play i {
 }
 
 section .icons {
+  flex-shrink: 0;
   grid-column: span 3;
 }
 

@@ -7,10 +7,12 @@
   section {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    background: url("./iphone.jpg") center/cover no-repeat;
+    // grid-template-columns: repeat(6, minmax(250px, 1fr));
+    background: url("./images/iphone.jpg") center/cover no-repeat;
     max-width: 1495px;
     margin: auto;
     font-family: 'Manrope', sans-serif;
+    font-weight: 500;
     nav {
       grid-column: 1 / -1;
       ul {
@@ -26,7 +28,7 @@
         }
         li:nth-child(3) {
           position: relative;
-          .find {
+          img {
             position: absolute;
           }
         }
@@ -39,11 +41,13 @@
     .play {
       color: white;
       grid-column: span 3;
+      // flex-shrink: 0;
       i {
         transform: scaleX(2);
       }
     }
     .icons {
+      flex-shrink: 0;
       grid-column: span 3;
     }
     .text {
