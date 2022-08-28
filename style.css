@@ -11,7 +11,7 @@ section {
   background: url("./images/iphone.jpg") center/cover no-repeat;
   max-width: 1495px;
   margin: auto;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   font-weight: 400;
 }
 
@@ -117,7 +117,7 @@ section .text h1 {
   line-height: 80px;
   letter-spacing: -0.035em;
   text-transform: capitalize;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 section .text h1 i.location {
@@ -180,7 +180,7 @@ section .arrow i {
 
 section .form {
   grid-area: form;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 section .form .wrapper {
@@ -204,7 +204,8 @@ section .form .wrapper .icons {
   padding-right: 5%;
 }
 
-section .form .wrapper .icons i.location, section .form .wrapper .icons img {
+section .form .wrapper .icons i.location,
+section .form .wrapper .icons img {
   display: block;
   margin: auto;
 }
@@ -230,11 +231,46 @@ section .form form {
   backdrop-filter: blur(78.2667px);
   border-radius: 10px;
   margin-right: 16.84%;
-  padding: 43.28px 0 33.78px 0;
+  padding: 43.28px 5.22% 33.78px 4.27%;
+}
+
+section .form form .input-control {
+  display: flex;
+  flex-direction: column;
+}
+
+section .form form .input-control label {
+  font-size: 23.234px;
+  line-height: 28px;
+  height: 29.56px;
+  font-style: normal;
+}
+
+section .form form .input-control input {
+  height: 71.78px;
+  background: white;
+  box-shadow: inset 18.3333px -18.3333px 18.3333px rgba(194, 185, 185, 0.1), inset -18.3333px 18.3333px 18.3333px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(36.6667px);
+  border-radius: 10px;
+}
+
+section .form form .input-control input::-webkit-input-placeholder {
+  color: #a99a9a;
+  font-weight: 400;
+  font-size: 20px;
+  height: 25.33px;
+  line-height: 24px;
+  padding-left: 6.6%;
+}
+
+section .form form .input-control:first-child label {
+  margin-bottom: 17.94px;
+  line-height: 28px;
 }
 
 section .form form i.arrow-down {
   transform: scale(1.5, 0.25);
+  color: black;
   position: absolute;
   top: -6px;
   right: 11%;

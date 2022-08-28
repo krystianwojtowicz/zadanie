@@ -19,7 +19,7 @@ toggleButton.addEventListener("click", function () {
 // form
 
 const form = document.getElementById("form");
-const username = document.getElementById("username");
+const locations = document.getElementById("locations");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
 const password2 = document.getElementById("password2");
@@ -62,15 +62,15 @@ const isValidEmail = (email) => {
 };
 
 const validateInputs = () => {
-  const usernameValue = username.value.trim();
+  const locationValue = locations.value.trim();
   const emailValue = email.value.trim();
   const passwordValue = password.value.trim();
   const password2Value = password2.value.trim();
 
-  if (usernameValue === "") {
-    setError(username, "Username is required");
+  if (locationValue === "") {
+    setError(locations, "Location is required");
   } else {
-    setSuccess(username);
+    setSuccess(locations);
   }
 
   if (emailValue === "") {
