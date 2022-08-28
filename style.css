@@ -6,12 +6,12 @@
 
 section {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(249px, 1fr));
   background: url("./images/iphone.jpg") center/cover no-repeat;
   max-width: 1495px;
   margin: auto;
   font-family: 'Manrope', sans-serif;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 section nav {
@@ -19,6 +19,8 @@ section nav {
 }
 
 section nav ul {
+  height: 81px;
+  align-items: center;
   display: flex;
   width: 100%;
   align-items: center;
@@ -27,10 +29,25 @@ section nav ul {
 
 section nav ul .navbar-toggle {
   display: none;
+  margin-right: 10px;
 }
 
 section nav ul li {
   list-style-type: none;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+section nav ul li:nth-child(6) {
+  margin-left: 1.47%;
+}
+
+section nav ul li:nth-child(5) {
+  margin: 0 1.47%;
+}
+
+section nav ul li:nth-child(4) {
+  margin: 0 1.47% 0 3.6%;
 }
 
 section nav ul li:nth-child(3) {
@@ -39,10 +56,31 @@ section nav ul li:nth-child(3) {
 
 section nav ul li:nth-child(3) img {
   position: absolute;
+  top: 8.56px;
+  left: 125.67px;
+}
+
+section nav ul li:last-child {
+  font-weight: 500;
+  margin-right: 7.2%;
+  margin-left: 5.9%;
+  width: 105.26px;
+  height: 34.83px;
+  background-color: #fdc463;
+  box-shadow: inset 6.25px -6.25px 6.25px rgba(194, 185, 185, 0.1), inset -6.25px 6.25px 6.25px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12.5px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 3.40909px;
+  color: black;
+  padding: auto;
+  text-align: center;
 }
 
 section nav ul .navbar-logo {
   flex: 1;
+  font-size: 25px;
+  line-height: 35px;
+  margin-left: 6.66%;
 }
 
 section .play {
@@ -111,7 +149,7 @@ section .form {
   font-family: 'Inter', sans-serif;
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 850px) {
   section .navbar ul {
     flex-wrap: wrap;
   }
