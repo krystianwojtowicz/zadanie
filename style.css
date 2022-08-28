@@ -16,10 +16,10 @@ section {
 
 section nav {
   grid-column: 1 / -1;
+  padding-top: 27px;
 }
 
 section nav ul {
-  height: 81px;
   align-items: center;
   display: flex;
   width: 100%;
@@ -152,6 +152,26 @@ section .form {
 @media all and (max-width: 850px) {
   section .navbar ul {
     flex-wrap: wrap;
+  }
+  section .navbar ul li:last-child {
+    width: 105.26px;
+    height: 34.83px;
+    margin: auto;
+  }
+  section .navbar ul li:nth-child(3) {
+    margin: 0;
+  }
+  section .navbar ul li:nth-child(3) img {
+    left: 60%;
+  }
+  section .navbar ul li:nth-child(4) {
+    margin: 0;
+  }
+  section .navbar ul li:nth-child(5) {
+    margin: 0;
+  }
+  section .navbar ul li:nth-child(6) {
+    margin: 0;
   }
   section .navbar ul .navbar-toggle {
     display: block;
