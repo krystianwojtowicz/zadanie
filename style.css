@@ -81,6 +81,10 @@ section nav ul li:last-child {
   text-align: center;
 }
 
+section nav ul li:last-child a {
+  color: black;
+}
+
 section nav ul .navbar-logo {
   flex: 1;
   font-size: 25px;
