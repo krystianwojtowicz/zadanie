@@ -139,8 +139,11 @@ section .text .dot {
 
 section .text .dot .popup {
   position: absolute;
+  width: 280px;
   top: 50px;
+  left: -20px;
   display: none;
+  z-index: 1;
 }
 
 section .text .dot .popup.show {
@@ -191,6 +194,7 @@ section .form .wrapper {
 section .form .wrapper .vector {
   width: 50%;
   margin-top: 97px;
+  padding-left: 30%;
 }
 
 section .form .wrapper .vector img {
@@ -223,7 +227,7 @@ section .form form {
   position: relative;
   color: white;
   font-weight: 500;
-  height: 674.5px;
+  min-height: 674.5px;
   max-width: 537.88px;
   margin-bottom: 75px;
   background: rgba(217, 217, 217, 0.1);
@@ -231,7 +235,7 @@ section .form form {
   backdrop-filter: blur(78.2667px);
   border-radius: 10px;
   margin-right: 16.84%;
-  padding: 43.28px 5.22% 33.78px 4.27%;
+  padding: 43.28px 0 33.78px 4.27%;
 }
 
 section .form form .input-control {
@@ -255,17 +259,127 @@ section .form form .input-control input {
 }
 
 section .form form .input-control input::-webkit-input-placeholder {
-  color: #a99a9a;
+  font-style: normal;
   font-weight: 400;
   font-size: 20px;
   height: 25.33px;
   line-height: 24px;
-  padding-left: 6.6%;
 }
 
-section .form form .input-control:first-child label {
+section .form form .input-control.first input {
+  margin-right: 5.22%;
+}
+
+section .form form .input-control.first input::-webkit-input-placeholder {
+  color: #a99a9a;
+  padding-left: 6.6%;
+  position: relative;
+  bottom: 2px;
+}
+
+section .form form .input-control.first label {
   margin-bottom: 17.94px;
   line-height: 28px;
+}
+
+section .form form .two-inputs {
+  display: flex;
+  margin-top: 29.56px;
+  margin-bottom: 32.72px;
+}
+
+section .form form .two-inputs .input-control {
+  width: 50%;
+}
+
+section .form form .two-inputs .input-control input {
+  margin-top: 7.39px;
+}
+
+section .form form .two-inputs .input-control input::-webkit-input-placeholder {
+  color: #818181;
+  padding-left: 7.7%;
+  position: relative;
+  bottom: 1px;
+}
+
+section .form form .two-inputs .input-control:first-child input {
+  margin-right: 9.325%;
+}
+
+section .form form .two-inputs .input-control:last-child label {
+  margin-left: 6.714%;
+  white-space: nowrap;
+}
+
+section .form form .two-inputs .input-control:last-child input {
+  margin-right: 11.19%;
+  margin-left: 6.714%;
+}
+
+section .form form .two-inputs .input-control:last-child .error {
+  margin-left: 6.714%;
+}
+
+section .form form .guest label {
+  margin-bottom: 7.39px;
+}
+
+section .form form .guest input {
+  margin-right: 5.22%;
+}
+
+section .form form .guest input::-webkit-input-placeholder {
+  color: #A99A9A;
+  padding-left: 5.775%;
+  position: relative;
+  bottom: 2px;
+}
+
+section .form form p {
+  margin-left: 5.38%;
+  margin-top: 23.83px;
+}
+
+section .form form p [type="checkbox"] {
+  transform: scale(3);
+  border: white;
+}
+
+section .form form p [type="checkbox"]:checked {
+  accent-color: white;
+}
+
+section .form form p [type="checkbox"]:checked + label::after {
+  content: "";
+}
+
+section .form form p label {
+  margin-left: 3%;
+  font-style: normal;
+  font-weight: 400;
+  height: 23.22px;
+  line-height: 22px;
+  font-size: 18px;
+}
+
+section .form form button {
+  margin-top: 79px;
+  width: 94.5%;
+  height: 71.78px;
+  background-color: #fdc463;
+  box-shadow: inset 18.3333px -18.3333px 18.3333px rgba(194, 185, 185, 0.1), inset -18.3333px 18.3333px 18.3333px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(36.6667px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 10px;
+  border: 0;
+  color: #070606;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 26.8184px;
+  line-height: 32px;
+  padding-left: 8%;
 }
 
 section .form form i.arrow-down {
@@ -274,6 +388,35 @@ section .form form i.arrow-down {
   position: absolute;
   top: -6px;
   right: 11%;
+}
+
+@media all and (max-width: 1370px) {
+  section .text h1 {
+    font-size: 40px;
+  }
+}
+
+@media all and (max-width: 880px) {
+  section {
+    grid-template-columns: 1fr;
+    grid-template-areas: "nav" "text" "arrow" "form";
+  }
+  section .text {
+    padding-left: 0;
+    margin: auto;
+  }
+  section .text h1 {
+    font-size: 66.607px;
+  }
+  section .arrow {
+    padding-top: 100px;
+  }
+  section .form form {
+    margin: auto;
+  }
+  section .form .wrapper .vector {
+    padding-left: 43%;
+  }
 }
 
 @media all and (max-width: 850px) {
@@ -307,5 +450,55 @@ section .form form i.arrow-down {
   }
   section .navbar ul .active {
     display: block;
+  }
+}
+
+@media all and (max-width: 565px) {
+  section .text h1 {
+    font-size: 40px;
+  }
+  section .form form {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
+@media all and (max-width: 414px) {
+  section .form form .two-inputs {
+    flex-direction: column;
+  }
+  section .form form .two-inputs .input-control {
+    margin: auto;
+  }
+  section .form form .two-inputs .input-control:first-child input {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  section .form form .two-inputs .input-control:first-child label {
+    margin-left: 8%;
+    margin-right: 5%;
+    margin-bottom: 7.39px;
+  }
+  section .form form .two-inputs .input-control:last-child input {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  section .form form .two-inputs .input-control:last-child label {
+    margin-top: 29.56px !important;
+    margin-bottom: 7.39px !important;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  section .form form p label {
+    margin-left: 5%;
+  }
+}
+
+@media all and (max-width: 280px) {
+  section .text h1 {
+    font-size: 30px;
+  }
+  section .form form p label {
+    font-size: 14px;
   }
 }

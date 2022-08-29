@@ -51,8 +51,6 @@
         <div class="dot" onclick="myFunction()">
           <iframe
             class="popup"
-            width="560"
-            height="315"
             src="https://www.youtube.com/embed/zsCD5XCu6CM"
             title="YouTube video player"
             frameborder="0"
@@ -79,7 +77,7 @@
         </div>
 
         <form id="form" action="/">
-          <div class="input-control">
+          <div class="input-control first">
             <label for="locations">Where you go?</label>
             <input
               id="locations"
@@ -90,22 +88,51 @@
             <!-- required -->
             <div class="error"></div>
           </div>
-          <div class="input-control">
-            <label for="email">Email</label>
-            <input id="email" name="email" type="text" />
+          <div class="two-inputs">
+            <div class="input-control">
+              <label for="checkin">Check in</label>
+              <input
+                id="checkin"
+                name="checkin"
+                type="text"
+                placeholder="10 May"
+              />
+              <div class="error"></div>
+            </div>
+            <div class="input-control">
+              <label for="checkout">Check out</label>
+              <input
+                id="checkout"
+                name="checkout"
+                type="text"
+                placeholder="10 May"
+              />
+              <div class="error"></div>
+            </div>
+          </div>
+          <div class="input-control guest">
+            <label for="guest">How many guests?</label>
+            <input
+              id="guest"
+              name="guest"
+              type="number"
+              placeholder="How many guests?"
+            />
             <div class="error"></div>
           </div>
-          <div class="input-control">
-            <label for="password">Password</label>
-            <input id="password" name="password" type="password" />
-            <div class="error"></div>
-          </div>
-          <div class="input-control">
-            <label for="password2">Password again</label>
-            <input id="password2" name="password2" type="password" />
-            <div class="error"></div>
-          </div>
-          <button type="submit">Sign Up</button>
+          <p>
+            <input type="checkbox" name="paying" checked="true" />
+            <label for="paying">Pay when checking in?</label>
+            <div class="checkmark-container">
+              <svg x="0px" y="0px" fill="none" width="50px" stroke="#FDC463" viewBox="0 0 25 30">
+               <path d="M2,19.2C5.9,23.6,9.4,28,9.4,28L23,2"/>
+             </svg>
+            </div>
+            <!-- <i class="fa fa-check" aria-hidden="true"></i> -->
+          </p>
+
+          <!-- spr numeru? czy robic w ogole zobaczyc tresc zadania -->
+          <button type="submit">Search Hotels</button>
           <i class="fa-solid fa-angle-down arrow-down"></i>
         </form>
       </div>

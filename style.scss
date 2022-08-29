@@ -131,8 +131,11 @@ section {
       position: relative;
       .popup {
         position: absolute;
+        width: 280px;
         top: 50px;
+        left: -20px;
         display: none;
+        z-index: 1;
       }
       .popup.show {
         display: block;
@@ -182,6 +185,7 @@ section {
       .vector {
         width: 50%;
         margin-top: 97px;
+        padding-left: 30%;
         img {
           position: relative;
           bottom: 10px;
@@ -211,7 +215,7 @@ section {
       position: relative;
       color: rgba(255, 255, 255, 1);
       font-weight: 500;
-      height: 674.5px;
+      min-height: 674.5px;
       max-width: 537.88px;
       margin-bottom: 75px;
       background: rgba(217, 217, 217, 0.1);
@@ -220,7 +224,7 @@ section {
       backdrop-filter: blur(78.2667px);
       border-radius: 10px;
       margin-right: 16.84%;
-      padding: 43.28px 5.22% 33.78px 4.27%;
+      padding: 43.28px 0 33.78px 4.27%;
       .input-control {
         display: flex;
         flex-direction: column;
@@ -240,24 +244,136 @@ section {
           border-radius: 10px;
         }
         input::-webkit-input-placeholder {
-          color: #a99a9a;
+          font-style: normal;
           font-weight: 400;
           font-size: 20px;
           height: 25.33px;
           line-height: 24px;
-          padding-left: 6.6%;
           // margin-top: 30px;
         }
       }
-      .input-control:first-child {
+      
+      .input-control.first {
+        input {
+          margin-right: 5.22%;
+        }
+        input::-webkit-input-placeholder {
+          color: #a99a9a;
+          padding-left: 6.6%;
+          position: relative;
+          bottom: 2px;
+        }
         label {
           margin-bottom: 17.94px;
           line-height: 28px;
+      
         }
-        input::-webkit-input-placeholder {
+        
+        // input::-webkit-input-placeholder {
           
+        // }
+      }
+      .two-inputs {
+        display: flex;
+        margin-top: 29.56px;
+        margin-bottom: 32.72px;
+        .input-control {
+          width: 50%;
+          input {
+            margin-top: 7.39px;
+          }
+          input::-webkit-input-placeholder {
+            color: #818181;
+            padding-left: 7.7%;
+            position: relative;
+            bottom: 1px;
+          }
+        }
+        .input-control:first-child {
+          input {
+            margin-right: 9.325%;
+          }
+        }
+        .input-control:last-child {
+          label {
+            margin-left: 6.714%;
+            white-space: nowrap;
+          }
+          input {
+            margin-right: 11.19%;
+            margin-left: 6.714%;
+          }
+          .error {
+            margin-left: 6.714%;
+          }
         }
       }
+
+      .guest {
+        label {
+          margin-bottom: 7.39px;
+        }
+        input {
+          margin-right: 5.22%;
+        }
+        input::-webkit-input-placeholder {
+          color: #A99A9A;
+          padding-left: 5.775%;
+          position: relative;
+          bottom: 2px;
+        }
+      }
+      p {
+        margin-left: 5.38%;
+margin-top: 23.83px;
+[type="checkbox"] {
+  transform: scale(3);
+  border: white;
+}
+[type="checkbox"]:checked{
+  accent-color: white;
+}
+[type="checkbox"]:checked + label::after{
+  content: "";
+}
+// [type="checkbox"]:after{
+//   accent-color: white;
+// }
+label {
+  margin-left: 3%;
+  font-style: normal;
+  font-weight: 400;
+  height: 23.22px;
+  line-height: 22px;
+  font-size: 18px;
+}
+      }
+      button {
+        margin-top: 79px;
+        width: 94.5%;
+        height: 71.78px;
+        background-color: rgba(253, 196, 99, 1);
+        box-shadow: inset 18.3333px -18.3333px 18.3333px rgba(194, 185, 185, 0.1), inset -18.3333px 18.3333px 18.3333px rgba(255, 255, 255, 0.1);
+backdrop-filter: blur(36.6667px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 10px;
+border: 0;
+color: rgba(7, 6, 6, 1);
+font-family: "Inter", sans-serif;
+font-weight: 500;
+font-style: normal;
+font-size: 26.8184px;
+line-height: 32px;
+padding-left: 8%;
+      }
+      
+      // .input-control:nth-child(2) {
+      //   label {
+      //     margin-top: 29.56px;
+      //     margin-bottom: 7.39px;
+      //   }
+      // }
       i.arrow-down {
         transform: scale(1.5, 0.25);
         color: black;
@@ -266,6 +382,38 @@ section {
         right: 11%;
       }
     }
+  }
+}
+
+@media all and (max-width: 1370px) {
+  section .text h1 {
+      font-size: 40px;
+  }
+}
+
+@media all and (max-width: 880px) {
+  
+  section {
+    grid-template-columns: 1fr;
+    grid-template-areas: "nav" "text" "arrow" "form";
+   .text{
+    padding-left: 0;
+    margin: auto;
+    h1 {
+      font-size: 66.607px;
+    }
+   }
+  .arrow {
+    padding-top: 100px;
+  }
+  .form{
+    form {
+      margin: auto;
+    }
+    .wrapper .vector {
+      padding-left: 43%;
+    }
+  } 
   }
 }
 
@@ -303,6 +451,75 @@ section {
       }
     }
   }
+}
+
+@media all and (max-width: 565px) {
+  section {
+    .text h1 {
+      font-size: 40px;
+  }
+    .form {
+      form {
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 414px) {
+  section {
+    .form {
+      form {
+        .two-inputs {
+          flex-direction: column;
+          .input-control {
+            margin: auto;
+          }
+          .input-control:first-child {
+            input {
+              margin-left: 5%;
+              margin-right: 5%;
+            }
+            label {
+              margin-left: 8%;
+              margin-right: 5%;
+              margin-bottom: 7.39px;
+
+            }
+          }
+          .input-control:last-child {
+            input {
+              
+              margin-left: 5%;
+              margin-right: 5%;
+            }
+            label {
+              margin-top: 29.56px !important;
+              margin-bottom: 7.39px !important;
+              margin-left: 5%;
+              margin-right: 5%;
+
+            }
+          }
+        }
+        p label{
+            margin-left: 5%;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 280px) {
+  section {
+    .text h1 {
+      font-size: 30px;
+  }
+  .form form p label {
+    font-size: 14px;
+  }
+}
 }
 
 
