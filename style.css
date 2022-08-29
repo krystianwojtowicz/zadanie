@@ -13,6 +13,7 @@ section {
   margin: auto;
   font-family: "Manrope", sans-serif;
   font-weight: 400;
+  font-style: normal;
 }
 
 section nav {
@@ -110,7 +111,6 @@ section .text h1 {
   margin-top: 109px;
   max-width: 620px;
   min-height: 253.33px;
-  font-style: normal;
   font-weight: 600;
   font-size: 66.607px;
   line-height: 80px;
@@ -246,7 +246,6 @@ section .form form .input-control label {
   font-size: 23.234px;
   line-height: 28px;
   height: 29.56px;
-  font-style: normal;
 }
 
 section .form form .input-control input {
@@ -258,7 +257,6 @@ section .form form .input-control input {
 }
 
 section .form form .input-control input::-webkit-input-placeholder {
-  font-style: normal;
   font-weight: 400;
   font-size: 20px;
   height: 25.33px;
@@ -341,7 +339,6 @@ section .form form p {
 }
 
 section .form form p label {
-  font-style: normal;
   font-weight: 400;
   height: 23.22px;
   line-height: 22px;
@@ -391,7 +388,6 @@ section .form form button {
   color: #070606;
   font-family: "Inter", sans-serif;
   font-weight: 500;
-  font-style: normal;
   font-size: 26.8184px;
   line-height: 32px;
   padding-left: 8%;
