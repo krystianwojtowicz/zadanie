@@ -5,45 +5,121 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <!-- <script src="https://kit.fontawesome.com/4e938b38b8.js"></script> -->
-    <!-- <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Manrope&family=Rubik:wght@400;500&display=swap"
       rel="stylesheet"
-    /> -->
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <section>
       <nav class="navbar">
         <ul>
-          <li class="navbar-logo">Gloritel</li>
+          <li class="navbar-logo"><a href="#">Gloritel</a></li>
           <li class="navbar-toggle"><i class="fas fa-bars"></i></li>
-          <li class="navbar-links">Find Hotels</li>
-          <li class="navbar-links">Location</li>
-          <li class="navbar-links">About</li>
-          <li class="navbar-links">Contact</li>
-          <li class="navbar-links">Login</li>
+          <li class="navbar-links">
+            <a href=""><i class="fa-solid fa-angle-down"></i>Find Hotels</a>
+          </li>
+          <li class="navbar-links"><a href="#">Location</a></li>
+          <li class="navbar-links"><a href="#">About</a></li>
+          <li class="navbar-links"><a href="#">Contact</a></li>
+          <li class="navbar-links"><a href="#">Login</a></li>
         </ul>
       </nav>
-      <div class="play">
-        <i class="fa-solid fa-circle-play"></i>
-      </div>
-      <div class="icons">
-        <div>
-          <i class="fa-solid fa-location-dot"></i>
-        </div>
-        <div>
-          <i class="fa-solid fa-location-dot"></i>
-          <i class="fa-solid fa-location-dot"></i>
-          <i class="fa-solid fa-angle-down"></i>
-        </div>
-      </div>
       <div class="text">
-        <h1>Find Most Luxurious Hotels Across the Globe</h1>
-        <button>sth</button>
+        <i class="fa-solid fa-circle-play circle"></i>
+        <h1>
+          <i class="fa-solid fa-location-dot location"></i>
+          find most <br />
+          luxurious hotels <br />
+          across the globe
+        </h1>
+        <div class="dot" onclick="myFunction()">
+          <iframe
+            class="popup"
+            src="https://www.youtube.com/embed/zsCD5XCu6CM"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <div class="oval">
+            <p>Watch Demo Video</p>
+          </div>
+        </div>
+      </div>
+      <div class="arrow">
+        <i class="fa-solid fa-angle-down"></i>
       </div>
       <div class="form">
-        <form>gasdfgsd</form>
+        <div class="wrapper">
+          <div class="vector">
+            <img src="./images/Vector.png" alt="" />
+          </div>
+          <div class="icons">
+            <i class="fa-solid fa-location-dot location"></i>
+            <img src="./images/Vector.png" alt="" />
+          </div>
+        </div>
+
+        <form id="form" action="/">
+          <div class="input-control first">
+            <label for="locations">Where you go?</label>
+            <input
+              id="locations"
+              name="locations"
+              type="text"
+              placeholder="try “Pakistan”"
+            />
+            <div class="error"></div>
+          </div>
+          <div class="two-inputs">
+            <div class="input-control">
+              <label for="checkin">Check in</label>
+              <input
+                id="checkin"
+                name="checkin"
+                type="text"
+                placeholder="10 May"
+              />
+              <div class="error"></div>
+            </div>
+            <div class="input-control">
+              <label for="checkout">Check out</label>
+              <input
+                id="checkout"
+                name="checkout"
+                type="text"
+                placeholder="10 May"
+              />
+              <div class="error"></div>
+            </div>
+          </div>
+          <div class="input-control guest">
+            <label for="guest">Guest</label>
+            <input
+              id="guest"
+              name="guest"
+              type="number"
+              placeholder="How many guests?"
+            />
+            <div class="error"></div>
+          </div>
+          <p>
+            <label for="check-1"
+              ><input
+                type="checkbox"
+                name="check-1"
+                value="Label"
+                checked="true"
+              />
+              Pay when checking in?
+            </label>
+          </p>
+          <button type="submit">Search Hotels</button>
+          <i class="fa-solid fa-angle-down arrow-down"></i>
+        </form>
       </div>
     </section>
     <script
