@@ -1,5 +1,3 @@
-// const xhttp = new XMLHttpRequest();
-// xhttp.open("GET", "https://www.youtube.com/embed/zsCD5XCu6CM", true);
 // popup
 
 function myFunction() {
@@ -54,12 +52,6 @@ function checking() {
   counter++;
   if (counter === 4) console.log("przesłanie formularza");
 }
-
-// const isValidEmail = (email) => {
-//   const re =
-//     /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-//   return re.test(String(email).toLowerCase());
-// };
 
 const validateInputs = () => {
   const locationValue = locations.value.trim();

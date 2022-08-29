@@ -5,25 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    /> -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Manrope&family=Rubik:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <!-- <link
-      href="https://fonts.googleapis.com/css2?family=Manrope&family=Rubik:wght@400;500&display=swap"
-      rel="stylesheet"
-    /> -->
     <link rel="stylesheet" href="style.css" />
-    <!-- <script src="https://kit.fontawesome.com/4e938b38b8.js"></script> -->
-    <!-- <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-      rel="stylesheet"
-    /> -->
   </head>
   <body>
     <section>
@@ -85,7 +72,6 @@
               type="text"
               placeholder="try “Pakistan”"
             />
-            <!-- required -->
             <div class="error"></div>
           </div>
           <div class="two-inputs">
@@ -111,7 +97,7 @@
             </div>
           </div>
           <div class="input-control guest">
-            <label for="guest">How many guests?</label>
+            <label for="guest">Guest</label>
             <input
               id="guest"
               name="guest"
@@ -121,17 +107,16 @@
             <div class="error"></div>
           </div>
           <p>
-            <input type="checkbox" name="paying" checked="true" />
-            <label for="paying">Pay when checking in?</label>
-            <div class="checkmark-container">
-              <svg x="0px" y="0px" fill="none" width="50px" stroke="#FDC463" viewBox="0 0 25 30">
-               <path d="M2,19.2C5.9,23.6,9.4,28,9.4,28L23,2"/>
-             </svg>
-            </div>
-            <!-- <i class="fa fa-check" aria-hidden="true"></i> -->
+            <label for="check-1"
+              ><input
+                type="checkbox"
+                name="check-1"
+                value="Label"
+                checked="true"
+              />
+              Pay when checking in?
+            </label>
           </p>
-
-          <!-- spr numeru? czy robic w ogole zobaczyc tresc zadania -->
           <button type="submit">Search Hotels</button>
           <i class="fa-solid fa-angle-down arrow-down"></i>
         </form>
