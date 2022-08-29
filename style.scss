@@ -13,6 +13,7 @@ section {
   margin: auto;
   font-family: "Manrope", sans-serif;
   font-weight: 400;
+  font-style: normal;
   nav {
     padding-top: 27px;
     grid-area: nav;
@@ -96,7 +97,6 @@ section {
       margin-top: 109px;
       max-width: 620px;
       min-height: 253.33px;
-      font-style: normal;
       font-weight: 600;
       font-size: 66.607px;
       line-height: 80px;
@@ -215,7 +215,6 @@ section {
           font-size: 23.234px;
           line-height: 28px;
           height: 29.56px;
-          font-style: normal;
         }
         input {
           height: 71.78px;
@@ -226,7 +225,6 @@ section {
           border-radius: 10px;
         }
         input::-webkit-input-placeholder {
-          font-style: normal;
           font-weight: 400;
           font-size: 20px;
           height: 25.33px;
@@ -304,7 +302,6 @@ section {
 
         margin-top: 6.83px;
         label {
-          font-style: normal;
           font-weight: 400;
           height: 23.22px;
           line-height: 22px;
@@ -353,7 +350,6 @@ section {
         color: rgba(7, 6, 6, 1);
         font-family: "Inter", sans-serif;
         font-weight: 500;
-        font-style: normal;
         font-size: 26.8184px;
         line-height: 32px;
         padding-left: 8%;
