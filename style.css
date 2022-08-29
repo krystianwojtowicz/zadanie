@@ -486,23 +486,21 @@ section .form form i.arrow-down {
     margin: auto;
   }
   section .form form .two-inputs .input-control:first-child input {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 2.865%;
+    margin-right: 7.135%;
   }
   section .form form .two-inputs .input-control:first-child label {
-    margin-left: 8%;
-    margin-right: 5%;
+    margin-left: 2.865%;
     margin-bottom: 7.39px;
   }
   section .form form .two-inputs .input-control:last-child input {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 2.865%;
+    margin-right: 7.135%;
   }
   section .form form .two-inputs .input-control:last-child label {
     margin-top: 29.56px !important;
     margin-bottom: 7.39px !important;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 2.865%;
   }
 }
 
